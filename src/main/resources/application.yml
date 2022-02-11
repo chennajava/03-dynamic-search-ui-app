@@ -1,0 +1,14 @@
+hibernate:
+  dialect: org.hibernate.dialect.H2Dialect
+server:
+  port: 9090
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password:
+    url: jdbc:h2:mem:testdb
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
